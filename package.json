@@ -1,0 +1,18 @@
+{
+  "name": "it-solutions-uganda-site",
+  "version": "1.0.0",
+  "description": "IT Solutions Uganda website (demo)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "IT Solutions Uganda",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

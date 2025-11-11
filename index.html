@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IT Solutions Uganda — Managed IT, Cloud & Software</title>
+  <meta name="description" content="IT Solutions Uganda provides managed IT, cloud migration, secure networks and local payment integrations. Trusted by businesses across Kampala and Uganda." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">IT Solutions Uganda</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <h1 id="hero-heading">Your trusted IT partner in Uganda</h1>
+        <p class="lead">Managed IT, secure networks, cloud migration and local payment integrations that keep your business running and growing.</p>
+        <p class="cta-row">
+          <a class="btn btn-primary" href="#contact">Request a proposal</a>
+          <a class="btn btn-outline" href="#services">See services</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section services container" aria-labelledby="services-heading">
+      <h2 id="services-heading">What we do — practical IT that delivers results</h2>
+      <div class="grid services-grid">
+        <article class="card">
+          <h3>Managed IT & Support</h3>
+          <p>Reliable helpdesk, device management and on-site support so your team stays productive. We handle maintenance, updates and procurement.</p>
+        </article>
+        <article class="card">
+          <h3>Network & Connectivity</h3>
+          <p>Design and deploy resilient office networks, structured cabling and secure Wi‑Fi so staff and customers can connect without interruptions.</p>
+        </article>
+        <article class="card">
+          <h3>Cloud & Infrastructure</h3>
+          <p>Migrate to cost-effective cloud platforms, implement backups and disaster recovery to reduce downtime and simplify operations.</p>
+        </article>
+        <article class="card">
+          <h3>Security & Compliance</h3>
+          <p>Practical security: vulnerability checks, endpoint protection, and staff training to reduce risk and meet regulatory or sector requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Custom Software & Integrations</h3>
+          <p>Build web and mobile systems, connect accounting/payments, and automate workflows to improve efficiency and reporting.</p>
+        </article>
+        <article class="card">
+          <h3>Payments & Merchant Solutions</h3>
+          <p>Point-of-sale, payment gateway integration (Flutterwave and other providers) and merchant onboarding for businesses across Uganda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected work — outcomes that matter</h2>
+      <div class="projects-grid">
+        <figure class="project">
+          <img src="assets/project-1.jpg" alt="Dashboard screenshot" />
+          <figcaption><strong>Business Intelligence Dashboard</strong> — Consolidated reporting that cut monthly reporting time by 60%.</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="assets/project-2.jpg" alt="Network setup" />
+          <figcaption><strong>Office Network Rollout</strong> — Full cabling, secure Wi‑Fi and remote access for a multi-branch client.</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="assets/project-3.jpg" alt="Mobile app preview" />
+          <figcaption><strong>Merchant Mobile App</strong> — Offline-capable sales capture with Flutterwave payments and reconciliation.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section about container" aria-labelledby="about-heading">
+      <h2 id="about-heading">About IT Solutions Uganda</h2>
+      <p>Based in Kampala, we help local businesses modernize their IT so they can focus on growth. Our team combines network engineers, cloud specialists and developers who understand both international best practices and local constraints.</p>
+      <p>We prioritize straightforward, affordable solutions — predictable costs, measurable results and local support.</p>
+      <p class="muted">Find us on social: <a href="https://itsolutionsuganda.company.site/" rel="noopener">Website</a> • <a href="https://www.facebook.com/itsolutionsuganda" rel="noopener">Facebook</a> • <a href="https://instagram.com/itsolutionsuganda" rel="noopener">Instagram</a> • <a href="https://www.tiktok.com/@itsolutionsuganda" rel="noopener">TikTok</a></p>
+    </section>
+
+    <section id="contact" class="section contact container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in touch — we’ll respond within one business day</h2>
+      <form id="contactForm" class="contact-form" action="/api/contact" method="POST" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" required />
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" id="phone" placeholder="+256 7XX XXX XXX" />
+          </label>
+          <label>
+            <span>Location</span>
+            <input type="text" name="location" id="location" placeholder="Kampala, Uganda" />
+          </label>
+        </div>
+
+        <label>
+          <span>Organization (optional)</span>
+          <input type="text" name="company" id="company" />
+        </label>
+        <label>
+          <span>How can we help?</span>
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send request</button>
+          <div id="formStatus" role="status" aria-live="polite"></div>
+        </div>
+
+        <p class="muted" style="margin-top:0.5rem">We respect your privacy. Contact details are used only to respond to your request and to arrange follow-up. By contacting us you agree to be contacted by IT Solutions Uganda.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> IT Solutions Uganda. All rights reserved.</p>
+      <p class="muted">Contact: <a href="tel:+256700000000">+256 700 000 000</a> • <a href="mailto:info@itsolutionsuganda.co.ug">info@itsolutionsuganda.co.ug</a></p>
+      <p class="muted">Follow us: <a href="https://www.facebook.com/itsolutionsuganda" rel="noopener">Facebook</a> • <a href="https://instagram.com/itsolutionsuganda" rel="noopener">Instagram</a> • <a href="https://www.tiktok.com/@itsolutionsuganda" rel="noopener">TikTok</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
