@@ -1,5 +1,5 @@
 ```markdown
-# IT Solutions Uganda — Website (Demo)
+# IT Solutions Uganda — Website
 
 A focused, responsive website for IT Solutions Uganda — a Kampala-based IT services provider. This repo provides a minimal frontend and a demo Express backend for contact submission.
 
