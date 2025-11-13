@@ -74,7 +74,12 @@ app.use('/api/admin', require('../routes/admin'));
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', timestamp: new Date().toISOString(), db: dbConnected });
+});
+
+// Simple root route for testing
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'index.html'));
 });
 
 // Serve index.html for all other routes
