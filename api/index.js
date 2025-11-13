@@ -77,6 +77,11 @@ app.get('/api/health', (req, res) => {
 
 // Serve index.html for all other routes
 app.get('*', (req, res) => {
+  // Don't handle static files - let Vercel serve them
+  if (req.path.match(/\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$/)) {
+    return res.status(404).send('Not found');
+  }
+  
   if (!req.path.startsWith('/api')) {
     res.sendFile(path.join(__dirname, '..', 'index.html'));
   } else {
