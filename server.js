@@ -1,8 +1,22 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
+const connectDB = require('./config/database');
+const logger = require('./config/logger');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Initialize database connection
+let dbConnected = false;
+connectDB().then((conn) => {
+  if (conn) {
+    dbConnected = true;
+    logger.info('Database initialized successfully');
+  }
+}).catch(err => {
+  logger.error('Database initialization failed:', err);
+});
 
 // Body parsing
 app.use(express.json());
@@ -10,20 +24,25 @@ app.use(express.urlencoded({ extended: true }));
 
 // Static files
 app.use(express.static(path.join(__dirname, '/')));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-// Simple contact endpoint (demo only)
-app.post('/api/contact', (req, res) => {
-  const { name, email, message } = req.body || {};
-  if (!name || !email || !message) {
-    return res.status(400).json({ message: 'Missing required fields (name, email, message).' });
-  }
-  console.log('Contact received:', { name, email, message });
-  return res.json({ message: 'Thanks — your request has been received. We will respond within one business day.' });
-});
+// API Routes
+app.use('/api/contact', require('./routes/contact'));
+app.use('/api/newsletter', require('./routes/newsletter'));
+app.use('/api/blog', require('./routes/blog'));
+app.use('/api/testimonials', require('./routes/testimonials'));
+app.use('/api/orders', require('./routes/orders'));
+app.use('/api/appointments', require('./routes/appointments'));
+app.use('/api/quotes', require('./routes/quotes'));
+app.use('/api/admin', require('./routes/admin'));
 
 // Health check
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({ 
+    status: 'ok', 
+    timestamp: new Date().toISOString(),
+    database: dbConnected ? 'connected' : 'disconnected'
+  });
 });
 
 // Serve index.html for all other routes

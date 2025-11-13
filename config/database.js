@@ -3,13 +3,16 @@ const logger = require('./logger');
 
 const connectDB = async () => {
   try {
-    if (!process.env.MONGODB_URI) {
-      logger.warn('MONGODB_URI not configured - database features will be unavailable');
+    // Support both MONGODB_URL (from Vercel storage) and MONGODB_URI
+    const mongoUri = process.env.MONGODB_URL || process.env.MONGODB_URI;
+    
+    if (!mongoUri) {
+      logger.warn('MONGODB_URL or MONGODB_URI not configured - database features will be unavailable');
       return;
     }
     
     // Mongoose 6+ doesn't need useNewUrlParser and useUnifiedTopology
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+    const conn = await mongoose.connect(mongoUri, {
       serverSelectionTimeoutMS: 5000,
       socketTimeoutMS: 45000,
     });
