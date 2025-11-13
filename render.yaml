@@ -8,6 +8,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: MONGODB_URI
-        value: mongodb+srv://Vercel-Admin-itsolutions:Mun00nDa5###@itsolutions.31hekau.mongodb.net/itsolutions?retryWrites=true&w=majority
+        value: mongodb+srv://Vercel-Admin-itsolutions:Mun00nDa5%23%23%23@itsolutions.31hekau.mongodb.net/itsolutions?retryWrites=true&w=majority
       - key: PORT
-        value: 3000
+        value: 10000
