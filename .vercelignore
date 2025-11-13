@@ -1,0 +1,12 @@
+node_modules
+*.log
+.env
+.env.*
+server.js
+api
+routes
+config
+models
+middleware
+package.json
+package-lock.json
