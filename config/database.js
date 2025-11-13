@@ -8,15 +8,19 @@ const connectDB = async () => {
       return;
     }
     
+    // Mongoose 6+ doesn't need useNewUrlParser and useUnifiedTopology
     const conn = await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 45000,
     });
     logger.info(`MongoDB Connected: ${conn.connection.host}`);
+    return conn;
   } catch (error) {
     logger.error(`Database connection error: ${error.message}`);
+    logger.error(`Stack: ${error.stack}`);
     logger.warn('Server will continue without database functionality');
     // Don't exit - allow server to run in limited mode
+    return null;
   }
 };
 

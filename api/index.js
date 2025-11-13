@@ -10,8 +10,16 @@ const logger = require('../config/logger');
 
 const app = express();
 
-// Connect to database
-connectDB();
+// Initialize database connection
+let dbConnected = false;
+connectDB().then((conn) => {
+  if (conn) {
+    dbConnected = true;
+    logger.info('Database initialized successfully');
+  }
+}).catch(err => {
+  logger.error('Database initialization failed:', err);
+});
 
 // Security middleware
 app.use(helmet({
