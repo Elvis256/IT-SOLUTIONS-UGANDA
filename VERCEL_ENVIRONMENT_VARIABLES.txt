@@ -1,0 +1,65 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  VERCEL ENVIRONMENT VARIABLES - COPY & PASTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Add these in Vercel Dashboard → Settings → Environment Variables
+Select: Production, Preview, and Development (all 3)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REQUIRED VARIABLES (Minimum):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Name: MONGODB_URI
+Value: mongodb+srv://elvis:Mun00nDa5%23%23%23%23@cluster0.j1pstg8.mongodb.net/itsolutions?retryWrites=true&w=majority
+
+Name: NODE_ENV
+Value: production
+
+Name: JWT_SECRET
+Value: jwt_secret_key_it_solutions_uganda_2024_secure
+
+Name: SESSION_SECRET
+Value: session_secret_key_it_solutions_2024_secure
+
+Name: RATE_LIMIT_WINDOW_MS
+Value: 900000
+
+Name: RATE_LIMIT_MAX_REQUESTS
+Value: 100
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OPTIONAL (For Email Features):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Name: EMAIL_HOST
+Value: smtp.gmail.com
+
+Name: EMAIL_PORT
+Value: 587
+
+Name: EMAIL_USER
+Value: info@itsolutionsuganda.co.ug
+
+Name: EMAIL_PASSWORD
+Value: your_app_password_here
+
+Name: EMAIL_FROM
+Value: IT Solutions Uganda <info@itsolutionsuganda.co.ug>
+
+Name: ADMIN_EMAIL
+Value: admin@itsolutionsuganda.co.ug
+
+Name: ADMIN_PASSWORD
+Value: changeme123
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+NOTE: After adding MongoDB Storage in Vercel, you'll also get:
+  - MONGODB_URL (automatically created by Vercel Storage)
+  
+Your code supports both MONGODB_URL and MONGODB_URI, so either 
+will work!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
