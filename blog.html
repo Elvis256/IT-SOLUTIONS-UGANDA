@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog - IT Solutions Uganda</title>
+  <meta name="description" content="Tech insights, tutorials and industry news from IT Solutions Uganda" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">IT Solutions Uganda</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 3rem 0;">
+      <div class="container">
+        <h1>Tech Insights & Resources</h1>
+        <p class="lead">Expert perspectives on technology, cloud infrastructure, and digital transformation in Uganda.</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="blog-filters" style="margin-bottom: 2rem;">
+        <button class="filter-btn active" data-category="all">All Posts</button>
+        <button class="filter-btn" data-category="Technology">Technology</button>
+        <button class="filter-btn" data-category="Cloud">Cloud</button>
+        <button class="filter-btn" data-category="Security">Security</button>
+        <button class="filter-btn" data-category="Business">Business</button>
+        <button class="filter-btn" data-category="Tutorial">Tutorial</button>
+      </div>
+
+      <div id="blogList" class="blog-grid">
+        <div class="loading">Loading blog posts...</div>
+      </div>
+
+      <div id="pagination" class="pagination"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> IT Solutions Uganda. All rights reserved.</p>
+      <p class="muted">Contact: <a href="tel:+256700000000">+256 700 000 000</a> • <a href="mailto:info@itsolutionsuganda.co.ug">info@itsolutionsuganda.co.ug</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/blog.js" defer></script>
+</body>
+</html>

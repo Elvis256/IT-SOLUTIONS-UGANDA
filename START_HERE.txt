@@ -1,0 +1,71 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║         🚀 AVIS IT SOLUTIONS - AUTO-START SETUP 🚀               ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+👋 Hi! Let's set up your website to start automatically on boot.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 OPTION 1: Use Desktop Shortcut (Easiest)
+
+1. Look on your Desktop
+2. Find icon: "Setup Avis IT Auto-Start"
+3. Double-click it
+4. Enter your password
+5. Done! ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 OPTION 2: Use Terminal
+
+Open Terminal and run:
+
+cd /home/elvis/Downloads/files && sudo ./setup-autostart.sh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ AFTER SETUP, YOUR WEBSITE WILL:
+
+✓ Start automatically when computer boots
+✓ Run in the background
+✓ Restart automatically if it crashes
+✓ Be available at http://localhost:3000
+✓ Log everything to files for debugging
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔍 CHECK IF IT'S WORKING:
+
+In Terminal, run:
+   sudo systemctl status avis-it
+
+Or open in browser:
+   http://localhost:3000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🛠️ MANAGE THE SERVICE:
+
+Start:    sudo systemctl start avis-it
+Stop:     sudo systemctl stop avis-it
+Restart:  sudo systemctl restart avis-it
+Status:   sudo systemctl status avis-it
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 MORE INFO:
+
+Full Guide:        AUTOSTART_GUIDE.md
+Test System:       QUICK_ORDER_TEST.md
+System Details:    ORDER_SYSTEM_COMPLETE.md
+Deployment:        DEPLOYMENT.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 That's it! Your website will now start with the computer!
+
+Questions? Check the guides above or contact support.
+
+═══════════════════════════════════════════════════════════════════

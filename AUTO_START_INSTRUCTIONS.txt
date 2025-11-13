@@ -1,0 +1,54 @@
+═══════════════════════════════════════════════════════════════
+  AVIS IT SOLUTIONS - AUTO-START SETUP INSTRUCTIONS
+═══════════════════════════════════════════════════════════════
+
+📋 QUICK SETUP (Copy and paste these commands):
+
+1. Open Terminal (Ctrl+Alt+T)
+
+2. Run this command (will ask for password):
+
+   cd /home/elvis/Downloads/files && sudo ./setup-autostart.sh
+
+3. Enter your password when prompted
+
+4. Wait for "Setup Complete!" message
+
+═══════════════════════════════════════════════════════════════
+
+✅ VERIFICATION (After setup):
+
+Check if service is running:
+   sudo systemctl status avis-it
+
+Check if auto-start is enabled:
+   sudo systemctl is-enabled avis-it
+
+Test the website:
+   curl http://localhost:3000
+
+═══════════════════════════════════════════════════════════════
+
+🔄 COMMON COMMANDS:
+
+Start:    sudo systemctl start avis-it
+Stop:     sudo systemctl stop avis-it
+Restart:  sudo systemctl restart avis-it
+Status:   sudo systemctl status avis-it
+Logs:     sudo journalctl -u avis-it -f
+
+═══════════════════════════════════════════════════════════════
+
+🎯 WHAT THIS DOES:
+
+- Installs Avis IT Solutions as a system service
+- Starts automatically when computer boots
+- Restarts automatically if it crashes
+- Runs on http://localhost:3000
+- Saves logs to /home/elvis/Downloads/files/logs/
+
+═══════════════════════════════════════════════════════════════
+
+📖 For detailed instructions, see: AUTOSTART_GUIDE.md
+
+═══════════════════════════════════════════════════════════════

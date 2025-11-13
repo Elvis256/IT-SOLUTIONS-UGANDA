@@ -1,0 +1,17 @@
+[Unit]
+Description=Avis IT Solutions Uganda Website
+After=network.target
+
+[Service]
+Type=simple
+User=elvis
+WorkingDirectory=/home/elvis/Downloads/files
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node /home/elvis/Downloads/files/server.js
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/elvis/Downloads/files/logs/app.log
+StandardError=append:/home/elvis/Downloads/files/logs/error.log
+
+[Install]
+WantedBy=multi-user.target

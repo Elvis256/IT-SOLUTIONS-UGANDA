@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ - IT Solutions Uganda</title>
+  <meta name="description" content="Frequently asked questions about IT services in Uganda" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">IT Solutions Uganda</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 3rem 0;">
+      <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <p class="lead">Quick answers to common questions about our IT services.</p>
+      </div>
+    </section>
+
+    <section class="section container faq-section">
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-question">What areas do you serve in Uganda?</h3>
+          <div class="faq-answer">
+            <p>We primarily serve businesses in Kampala and the surrounding areas, but we also provide remote support and can travel to other regions for larger projects.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What are your support hours?</h3>
+          <div class="faq-answer">
+            <p>Our standard support hours are Monday to Friday, 8 AM to 6 PM EAT. We also offer 24/7 support packages for mission-critical systems.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer payment plans?</h3>
+          <div class="faq-answer">
+            <p>Yes! We offer flexible monthly payment plans for managed IT services and can structure project payments in milestones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How quickly can you respond to emergencies?</h3>
+          <div class="faq-answer">
+            <p>For managed service clients, we aim for a 2-hour response time for critical issues and same-day response for standard requests.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What cloud platforms do you work with?</h3>
+          <div class="faq-answer">
+            <p>We work with all major cloud providers including AWS, Microsoft Azure, Google Cloud, and DigitalOcean. We recommend solutions based on your specific needs and budget.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Can you integrate with mobile money services?</h3>
+          <div class="faq-answer">
+            <p>Absolutely! We have extensive experience integrating MTN Mobile Money, Airtel Money, and payment gateways like Flutterwave and Pesapal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you provide training for our staff?</h3>
+          <div class="faq-answer">
+            <p>Yes, we include training as part of all implementations and can provide additional cybersecurity awareness training for your team.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What size businesses do you work with?</h3>
+          <div class="faq-answer">
+            <p>We work with businesses of all sizes, from small startups to large enterprises. Our solutions scale with your growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> IT Solutions Uganda. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

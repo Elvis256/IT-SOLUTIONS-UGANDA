@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Avis IT Solutions Uganda — Complete IT Services & Support</title>
+  <meta name="description" content="Avis IT Solutions Uganda provides comprehensive IT services: computer sales, repairs, software development, networking, cybersecurity, and training. Trusted across Kampala." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Avis IT Solutions</a>
+      <div class="theme-switcher">
+        <button class="theme-btn active" data-theme="default" title="Default Blue Theme">
+          <span class="theme-icon">🔵</span>
+        </button>
+        <button class="theme-btn" data-theme="purple" title="Purple Dream Theme">
+          <span class="theme-icon">🟣</span>
+        </button>
+        <button class="theme-btn" data-theme="green" title="Nature Green Theme">
+          <span class="theme-icon">🟢</span>
+        </button>
+        <button class="theme-btn" data-theme="gray" title="Space Gray Theme">
+          <span class="theme-icon">⚫</span>
+        </button>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#appointments">Book Appointment</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <h1 id="hero-heading">Complete IT Solutions For You</h1>
+        <p class="lead">Comprehensive, reliable, and scalable IT services for individuals, SMEs, and enterprises. From hardware sales to custom software development.</p>
+        <p class="cta-row">
+          <a class="btn btn-primary" href="#contact">Get Started</a>
+          <a class="btn btn-outline" href="#services">Explore Services</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="services" class="section services container" aria-labelledby="services-heading">
+      <h2 id="services-heading">🔧 Our Services</h2>
+      <div class="grid services-grid">
+        <article class="card">
+          <h3>🖥️ Computer & Electronics Sales</h3>
+          <p>Business-grade laptops, desktops, smartphones, tablets, printers, networking equipment, and peripherals. All products with warranty and setup support.</p>
+        </article>
+        <article class="card">
+          <h3>🛠️ Hardware Repair & Maintenance</h3>
+          <p>Expert diagnostics, component replacement, preventive maintenance, and printer repairs. Both in-store and on-site service available.</p>
+        </article>
+        <article class="card">
+          <h3>💾 Software Installation & Development</h3>
+          <p>OS installation, business software setup, custom app development for inventory, HR, POS systems. License management and updates included.</p>
+        </article>
+        <article class="card">
+          <h3>🌐 Network Infrastructure & Connectivity</h3>
+          <p>LAN/WAN setup, Wi-Fi optimization, CCTV installation, structured cabling, and secure network configuration with 24/7 uptime focus.</p>
+        </article>
+        <article class="card">
+          <h3>🔐 Cybersecurity & Data Protection</h3>
+          <p>Endpoint protection, firewall configuration, data backup solutions, disaster recovery planning, and security audits to keep you compliant.</p>
+        </article>
+        <article class="card">
+          <h3>🌍 Website Design & Digital Marketing</h3>
+          <p>Responsive web design, e-commerce development, SEO optimization, social media integration, and email marketing campaigns.</p>
+        </article>
+        <article class="card">
+          <h3>🎓 IT Training & Consultancy</h3>
+          <p>IT Essentials, networking, cybersecurity courses. Corporate training, one-on-one coaching (UGX 80K/hr), and infrastructure consultancy.</p>
+        </article>
+        <article class="card">
+          <h3>🧑‍💻 Technical Support & Helpdesk</h3>
+          <p>Remote and on-site troubleshooting, SLA-based support, IT outsourcing, managed services. Available Monday–Saturday, 9am–7pm.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="shop" class="section shop container" aria-labelledby="shop-heading">
+      <h2 id="shop-heading">🛒 Shop Our Products</h2>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img src="assets/laptop.jpg" alt="Business Laptop" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%231a1f3a%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23a0aec0%22 font-size=%2224%22%3E💻%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <div class="product-info">
+            <h3>Business Laptops</h3>
+            <p class="product-desc">High-performance laptops for professionals</p>
+            <p class="product-price">From UGX 2,500,000</p>
+            <button class="btn btn-primary btn-sm" onclick="openOrderModal('Business Laptop')">Order Now</button>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="assets/desktop.jpg" alt="Desktop Computer" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%231a1f3a%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23a0aec0%22 font-size=%2224%22%3E🖥️%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <div class="product-info">
+            <h3>Desktop Computers</h3>
+            <p class="product-desc">Powerful workstations for business</p>
+            <p class="product-price">From UGX 1,800,000</p>
+            <button class="btn btn-primary btn-sm" onclick="openOrderModal('Desktop Computer')">Order Now</button>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="assets/printer.jpg" alt="Printer" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%231a1f3a%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23a0aec0%22 font-size=%2224%22%3E🖨️%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <div class="product-info">
+            <h3>Printers & Scanners</h3>
+            <p class="product-desc">Professional printing solutions</p>
+            <p class="product-price">From UGX 650,000</p>
+            <button class="btn btn-primary btn-sm" onclick="openOrderModal('Printer')">Order Now</button>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image">
+            <img src="assets/network.jpg" alt="Network Equipment" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22200%22%3E%3Crect fill=%22%231a1f3a%22 width=%22300%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23a0aec0%22 font-size=%2224%22%3E🌐%3C/text%3E%3C/svg%3E'" />
+          </div>
+          <div class="product-info">
+            <h3>Network Equipment</h3>
+            <p class="product-desc">Routers, switches & accessories</p>
+            <p class="product-price">From UGX 350,000</p>
+            <button class="btn btn-primary btn-sm" onclick="openOrderModal('Network Equipment')">Order Now</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="appointments" class="section appointments container" aria-labelledby="appointments-heading">
+      <h2 id="appointments-heading">📅 Book an Appointment</h2>
+      <div class="appointment-container">
+        <div class="appointment-info card">
+          <h3>Schedule a Consultation</h3>
+          <p>Book a time to discuss your IT needs with our experts. We offer:</p>
+          <ul>
+            <li>✅ Free initial consultation (30 minutes)</li>
+            <li>✅ On-site or remote meetings</li>
+            <li>✅ Hardware assessment & quotes</li>
+            <li>✅ Network planning & design</li>
+            <li>✅ Software development consultation</li>
+          </ul>
+          <p class="muted"><strong>Available:</strong> Monday–Saturday, 9am–7pm</p>
+        </div>
+        
+        <form id="appointmentForm" class="appointment-form card">
+          <h3>Book Your Slot</h3>
+          <div class="form-grid">
+            <label>
+              <span>Full Name *</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Phone Number *</span>
+              <input type="tel" name="phone" placeholder="+256 7XX XXX XXX" required />
+            </label>
+          </div>
+          
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" />
+          </label>
+          
+          <div class="form-grid">
+            <label>
+              <span>Preferred Date *</span>
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              <span>Preferred Time *</span>
+              <select name="time" required>
+                <option value="">Select time</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+                <option value="17:00">5:00 PM</option>
+              </select>
+            </label>
+          </div>
+          
+          <label>
+            <span>Service Needed *</span>
+            <select name="service" required>
+              <option value="">Select service</option>
+              <option value="consultation">General Consultation</option>
+              <option value="repair">Hardware Repair</option>
+              <option value="network">Network Setup</option>
+              <option value="software">Software Development</option>
+              <option value="training">IT Training</option>
+              <option value="support">Technical Support</option>
+            </select>
+          </label>
+          
+          <label>
+            <span>Additional Details</span>
+            <textarea name="details" rows="4" placeholder="Tell us more about your needs..."></textarea>
+          </label>
+          
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Book Appointment</button>
+            <div id="appointmentStatus" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected work — outcomes that matter</h2>
+      <div class="projects-grid">
+        <figure class="project">
+          <img src="assets/project-1.jpg" alt="Dashboard screenshot" />
+          <figcaption><strong>Business Intelligence Dashboard</strong> — Consolidated reporting that cut monthly reporting time by 60%.</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="assets/project-2.jpg" alt="Network setup" />
+          <figcaption><strong>Office Network Rollout</strong> — Full cabling, secure Wi‑Fi and remote access for a multi-branch client.</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="assets/project-3.jpg" alt="Mobile app preview" />
+          <figcaption><strong>Merchant Mobile App</strong> — Offline-capable sales capture with Flutterwave payments and reconciliation.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials container" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">What our clients say</h2>
+      <div id="testimonialsList" class="testimonials-grid">
+        <div class="loading">Loading testimonials...</div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <button class="btn btn-outline" id="addTestimonialBtn">Share your experience</button>
+      </div>
+    </section>
+
+    <section id="about" class="section about container" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Avis IT Solutions Uganda</h2>
+      <p>Based at Sun City Arcade, Kampala Road, we deliver comprehensive IT services to individuals, SMEs, and enterprises across Uganda. Our team of certified technicians and developers combines international best practices with deep local market knowledge.</p>
+      <p>From hardware sales and repairs to custom software development and cybersecurity — we're your complete IT partner.</p>
+      <p class="muted"><strong>Contact:</strong> +256 752 052202 / +256 740 596558 • <a href="mailto:info@itsolutionsuganda.com">info@itsolutionsuganda.com</a></p>
+    </section>
+
+    <section id="newsletter" class="section newsletter container" aria-labelledby="newsletter-heading">
+      <div class="newsletter-box">
+        <h2 id="newsletter-heading">Stay updated with tech insights</h2>
+        <p>Get monthly tips, industry news and exclusive offers delivered to your inbox.</p>
+        <form id="newsletterForm" class="newsletter-form">
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <div id="newsletterStatus" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in touch — we’ll respond within one business day</h2>
+      <form id="contactForm" class="contact-form" action="/api/contact" method="POST" novalidate>
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email" required />
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            <span>Phone</span>
+            <input type="tel" name="phone" id="phone" placeholder="+256 7XX XXX XXX" />
+          </label>
+          <label>
+            <span>Location</span>
+            <input type="text" name="location" id="location" placeholder="Kampala, Uganda" />
+          </label>
+        </div>
+
+        <label>
+          <span>Organization (optional)</span>
+          <input type="text" name="company" id="company" />
+        </label>
+        <label>
+          <span>How can we help?</span>
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Send request</button>
+          <div id="formStatus" role="status" aria-live="polite"></div>
+        </div>
+
+        <p class="muted" style="margin-top:0.5rem">We respect your privacy. Contact details are used only to respond to your request and to arrange follow-up. By contacting us you agree to be contacted by IT Solutions Uganda.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Avis IT Solutions Uganda. All rights reserved.</p>
+      <p class="muted">📞 +256 752 052202 / +256 740 596558 • 📧 <a href="mailto:info@itsolutionsuganda.com">info@itsolutionsuganda.com</a></p>
+      <p class="muted">📍 Sun City Arcade, Kampala Road • Chat on <a href="https://wa.me/256752052202" rel="noopener">WhatsApp</a> or <a href="https://t.me/yourusername" rel="noopener">Telegram</a></p>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeOrderModal()">&times;</span>
+      <h2>🛒 Request a Quote</h2>
+      <p class="modal-subtitle">Tell us exactly what you need and we'll generate a custom quote for you</p>
+      
+      <form id="orderForm">
+        <input type="hidden" id="orderProduct" name="product" />
+        
+        <!-- Step 1: Personal Information -->
+        <div class="form-section">
+          <h3>📋 Your Information</h3>
+          
+          <div class="form-grid">
+            <label>
+              <span>Full Name *</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Phone Number *</span>
+              <input type="tel" name="phone" placeholder="+256 7XX XXX XXX" required />
+            </label>
+          </div>
+          
+          <label>
+            <span>Email *</span>
+            <input type="email" name="email" required />
+          </label>
+          
+          <label>
+            <span>WhatsApp Number (for instant quote)</span>
+            <input type="tel" name="whatsapp" placeholder="+256 7XX XXX XXX" />
+          </label>
+        </div>
+
+        <!-- Step 2: Device Specifications -->
+        <div class="form-section">
+          <h3>💻 Device Specifications</h3>
+          
+          <label>
+            <span>Product Category *</span>
+            <input type="text" id="orderProductDisplay" name="category" readonly />
+          </label>
+          
+          <div class="form-grid">
+            <label>
+              <span>Brand Preference</span>
+              <select name="brand">
+                <option value="">Any Brand</option>
+                <option value="dell">Dell</option>
+                <option value="hp">HP</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="asus">Asus</option>
+                <option value="acer">Acer</option>
+                <option value="apple">Apple (MacBook)</option>
+                <option value="microsoft">Microsoft Surface</option>
+                <option value="samsung">Samsung</option>
+                <option value="other">Other (specify in notes)</option>
+              </select>
+            </label>
+            <label>
+              <span>Processor *</span>
+              <select name="processor" required>
+                <option value="">Select Processor</option>
+                <option value="intel_i3">Intel Core i3</option>
+                <option value="intel_i5">Intel Core i5</option>
+                <option value="intel_i7">Intel Core i7</option>
+                <option value="intel_i9">Intel Core i9</option>
+                <option value="amd_ryzen3">AMD Ryzen 3</option>
+                <option value="amd_ryzen5">AMD Ryzen 5</option>
+                <option value="amd_ryzen7">AMD Ryzen 7</option>
+                <option value="amd_ryzen9">AMD Ryzen 9</option>
+                <option value="apple_m1">Apple M1</option>
+                <option value="apple_m2">Apple M2</option>
+                <option value="apple_m3">Apple M3</option>
+              </select>
+            </label>
+          </div>
+          
+          <div class="form-grid">
+            <label>
+              <span>RAM (Memory) *</span>
+              <select name="ram" required>
+                <option value="">Select RAM</option>
+                <option value="4gb">4GB</option>
+                <option value="8gb">8GB</option>
+                <option value="16gb">16GB</option>
+                <option value="32gb">32GB</option>
+                <option value="64gb">64GB</option>
+              </select>
+            </label>
+            <label>
+              <span>Storage *</span>
+              <select name="storage" required>
+                <option value="">Select Storage</option>
+                <option value="256gb_ssd">256GB SSD</option>
+                <option value="512gb_ssd">512GB SSD</option>
+                <option value="1tb_ssd">1TB SSD</option>
+                <option value="2tb_ssd">2TB SSD</option>
+                <option value="1tb_hdd">1TB HDD</option>
+                <option value="2tb_hdd">2TB HDD</option>
+              </select>
+            </label>
+          </div>
+          
+          <div class="form-grid">
+            <label>
+              <span>Screen Size</span>
+              <select name="screen">
+                <option value="">Any Size</option>
+                <option value="13inch">13 inch</option>
+                <option value="14inch">14 inch</option>
+                <option value="15inch">15.6 inch</option>
+                <option value="17inch">17 inch</option>
+                <option value="24inch">24 inch (Desktop)</option>
+                <option value="27inch">27 inch (Desktop)</option>
+              </select>
+            </label>
+            <label>
+              <span>Graphics Card</span>
+              <select name="graphics">
+                <option value="integrated">Integrated Graphics</option>
+                <option value="nvidia_gtx">NVIDIA GTX Series</option>
+                <option value="nvidia_rtx">NVIDIA RTX Series</option>
+                <option value="amd_radeon">AMD Radeon</option>
+                <option value="apple_gpu">Apple GPU</option>
+              </select>
+            </label>
+          </div>
+          
+          <label>
+            <span>Operating System</span>
+            <select name="os">
+              <option value="windows11">Windows 11</option>
+              <option value="windows10">Windows 10</option>
+              <option value="macos">macOS</option>
+              <option value="linux">Linux</option>
+              <option value="no_os">No OS (I'll install my own)</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Step 3: Additional Requirements -->
+        <div class="form-section">
+          <h3>🎯 Additional Requirements</h3>
+          
+          <label>
+            <span>Quantity *</span>
+            <input type="number" name="quantity" min="1" value="1" required />
+          </label>
+          
+          <label>
+            <span>Intended Use *</span>
+            <select name="usage" required>
+              <option value="">Select Usage</option>
+              <option value="office">Office Work (Documents, Email)</option>
+              <option value="programming">Programming / Development</option>
+              <option value="design">Graphic Design / Video Editing</option>
+              <option value="gaming">Gaming</option>
+              <option value="student">Student / Education</option>
+              <option value="business">Business / Enterprise</option>
+              <option value="data_analysis">Data Analysis / Science</option>
+            </select>
+          </label>
+          
+          <label>
+            <span>Budget Range (UGX)</span>
+            <select name="budget">
+              <option value="">Any Budget</option>
+              <option value="under_2m">Under 2,000,000</option>
+              <option value="2m_3m">2,000,000 - 3,000,000</option>
+              <option value="3m_5m">3,000,000 - 5,000,000</option>
+              <option value="5m_10m">5,000,000 - 10,000,000</option>
+              <option value="above_10m">Above 10,000,000</option>
+            </select>
+          </label>
+          
+          <label>
+            <span>Delivery Location *</span>
+            <input type="text" name="location" placeholder="e.g., Kampala Central, Entebbe" required />
+          </label>
+          
+          <label>
+            <span>Additional Notes / Special Requirements</span>
+            <textarea name="notes" rows="3" placeholder="E.g., Need warranty, prefer specific color, need accessories..."></textarea>
+          </label>
+        </div>
+
+        <!-- Step 4: Quote Delivery Method -->
+        <div class="form-section">
+          <h3>📨 How to Receive Your Quote</h3>
+          <div class="delivery-options">
+            <label class="radio-option">
+              <input type="radio" name="delivery_method" value="email" checked />
+              <span class="radio-label">
+                <strong>📧 Email</strong>
+                <small>Detailed PDF quote via email</small>
+              </span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="delivery_method" value="whatsapp" />
+              <span class="radio-label">
+                <strong>💬 WhatsApp</strong>
+                <small>Instant quote on WhatsApp</small>
+              </span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="delivery_method" value="both" />
+              <span class="radio-label">
+                <strong>📧💬 Both</strong>
+                <small>Email & WhatsApp</small>
+              </span>
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Generate Quote</button>
+          <button type="button" class="btn btn-outline" onclick="closeOrderModal()">Cancel</button>
+          <div id="orderStatus" role="status" aria-live="polite"></div>
+        </div>
+        
+        <p class="form-note">
+          ℹ️ Your quote will be generated instantly based on current market prices and sent within 5 minutes.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
