@@ -10,16 +10,18 @@ const logger = require('../config/logger');
 
 const app = express();
 
-// Initialize database connection
+// Initialize database connection (async - don't wait)
 let dbConnected = false;
-connectDB().then((conn) => {
-  if (conn) {
-    dbConnected = true;
-    logger.info('Database initialized successfully');
-  }
-}).catch(err => {
-  logger.error('Database initialization failed:', err);
-});
+if (process.env.MONGODB_URL || process.env.MONGODB_URI) {
+  connectDB().then((conn) => {
+    if (conn) {
+      dbConnected = true;
+      logger.info('Database initialized successfully');
+    }
+  }).catch(err => {
+    logger.error('Database initialization failed:', err);
+  });
+}
 
 // Security middleware
 app.use(helmet({
